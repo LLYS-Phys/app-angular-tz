@@ -1,0 +1,27 @@
+:host{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        align-items: center;
+        a{
+            padding: 0.25rem;
+            width: fit-content;
+            text-decoration: none;
+            color: black;
+            border-bottom: 0.0625rem solid transparent;
+            &:hover{
+                border-bottom: 0.0625rem solid black;
+            }
+        }
+    }
+    .footer-logo{
+        img{
+            max-width: 25vw;
+        }
+    }
+}

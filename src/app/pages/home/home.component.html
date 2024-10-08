@@ -1,0 +1,7 @@
+
+<h1>Welcome to the Telespazio SatCom</h1>
+<div class="categories">
+    @for (category of categories; track category.id) {
+        <app-card-home [category]="category" [class]="category.name === 'Starlink' ? 'starlink' : ''"></app-card-home>
+    }
+</div>

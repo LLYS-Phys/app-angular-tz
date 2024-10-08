@@ -1,0 +1,16 @@
+.categories{
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.starlink{
+    img{
+        height: 30rem;
+        object-fit: fill !important;
+    }
+}
+h1{
+    text-align: center;
+}

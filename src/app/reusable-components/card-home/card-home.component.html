@@ -1,0 +1,16 @@
+<a [routerLink]="['/products', category()?.path]" [class]="class()">
+    <img [src]="'assets/images/categories/' + category()?.image">
+    <h4>{{ category()?.name }}</h4>
+</a>
+@if (category()?.additional_info){
+    <div class="info">
+        <mat-icon aria-hidden="false" aria-label="Info icon" fontIcon="info_outline" class="info-icon"></mat-icon>
+        <div class="tooltip">
+            @for (line of description; track line.id){
+                <p>
+                    {{ line.text }}
+                </p>
+            }
+        </div>
+    </div>
+}

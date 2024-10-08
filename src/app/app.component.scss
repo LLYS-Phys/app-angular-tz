@@ -1,0 +1,22 @@
+:host{
+    background-color: gray;
+}
+main{
+    min-height: 80vh;
+    margin-top: 7.5rem;
+    .bg-image{
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        object-fit: cover; 
+        height: 100%; 
+        opacity: 0.3; 
+        z-index: -1
+    }
+}
+main:has(.homePage){
+    .bg-image{
+        opacity: 0.5;
+    }
+}

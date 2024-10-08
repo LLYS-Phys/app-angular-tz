@@ -1,0 +1,20 @@
+<nav>
+    <a [routerLink]="['/']" class="home">
+        <img src="assets/logo.png">
+    </a>
+    <div class="main-navigation">
+        <a [routerLink]="['/products']">Products</a>
+        <a>Contacts</a>
+        @if (!isAuthenticated) {
+            <a [routerLink]="['/auth', 'register']">Register</a>
+            <a [routerLink]="['/auth', 'login']">Login</a>
+        }
+        @else {
+            <a>Shopping cart</a>
+            <a>Wishlist</a>
+            <a>Your Dashboard</a>
+            <a>Settings</a>
+            <a [routerLink]="['/']" (click)="onLogout()">Logout</a>
+        }
+    </div>
+</nav>

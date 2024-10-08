@@ -1,0 +1,68 @@
+<div class="footer-logo">
+    <a [routerLink]="['/']">
+        <img src="assets/logo.png">
+    </a>
+</div>
+<div class="products">
+    <h3>Products:</h3>
+    <a [routerLink]="['/products']">
+        Satellite Phones
+    </a>
+    <a [routerLink]="['/products']">
+        Sim Cards & Airtime
+    </a>
+    <a [routerLink]="['/products']">
+        Docking Stations
+    </a>
+    <a [routerLink]="['/products']">
+        Modems & Terminals
+    </a>
+    <a [routerLink]="['/products']">
+        Maritime Solutions
+    </a>
+    <a [routerLink]="['/products']">
+        Starlink
+    </a>
+    <a [routerLink]="['/products']">
+        Satellite Two-Way Radios
+    </a>
+    <a [routerLink]="['/products']">
+        Accessories
+    </a>
+    <a [routerLink]="['/products']">
+        Tracking
+    </a>
+</div>
+<div class="sitemap">
+    <h3>Sitemap:</h3>
+    <a>
+        Contacts
+    </a>
+    <a [routerLink]="['/products']">
+        Products
+    </a>
+    <a [routerLink]="['/privacy']">
+        Privacy Policy
+    </a>
+    @if (!isAuthenticated) {
+        <a [routerLink]="['/auth', 'register']">Register</a>
+        <a [routerLink]="['/auth', 'login']">Login</a>
+    }
+    @else {
+        <a>
+            Shopping cart
+        </a>
+        <a>
+            Wishlist
+        </a>
+        <a>
+            Your Dashboard
+        </a>
+        <a>
+            Settings
+        </a>
+    }
+    <a>
+        Cookies Policy
+    </a>
+</div>
